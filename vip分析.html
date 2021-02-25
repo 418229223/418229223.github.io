@@ -68,17 +68,17 @@
         </ul>
         <div id="banner_list">
             <a href="https://pics1.baidu.com/feed/d1a20cf431adcbeffa82fce9d58999d9a2cc9f52.jpeg?token=448539945194433718507b7a07cb39ff&s=C700B844CE961E59122A003E0300D05A" target="_blank">
-                <img src="./截图/1.png">
+                <img src="./截图/11.png">
             </a>
             <a href="#" target="_blank">
-                <img src="./截图/2.png">
+                <img src="./截图/22.png">
 
             </a>
             <a href="#" target="_blank">
-                <img src="./截图/3-1.png">
+                <img src="./截图/33-1.png">
             </a>
             <a href="#" target="_blank">
-                <img src="./截图/4.png">
+                <img src="./截图/44.png">
             </a>
         </div>
     </div>
@@ -87,10 +87,10 @@
             <button>作者</button>
         </a>
         <a href="./客源分析.html">
-            <button class="button_background">客源分析</button>
+            <button>客源分析</button>
         </a>
         <a href="./vip分析.html">
-            <button>vip分析</button>
+            <button class="button_background">vip分析</button>
         </a>
         <a href="./经营分析.html">
             <button>经营分析</button>
@@ -102,7 +102,7 @@
     <div>
 
         <h3>分析过程：
-        <p>重点在于用group by分组</p>
+            <p>重点在于用like匹配150k收入的用户</p>
             <img src="">
         </h3>
         <br>
@@ -112,7 +112,7 @@
         <br>
 
         <h3>sql语句：
-            <img src="./截图/11.png">
+            <img src="./截图/22.png">
         </h3>
         <br>
         <br>
@@ -120,7 +120,7 @@
         <br>
         <br>
         <h3>查询结果：
-            <img src="./截图/1.png">
+            <img src="./截图/2.png">
         </h3>
         <br>
         <br>
@@ -128,13 +128,13 @@
         <br>
         <br>
         <h3>可视化：
-            
+               
         </h3>
-        <div id="57777a1586e349bd987700fcb42bc606" class="chart-container" style="width:900px; height:500px;"></div>
+        <div id="1342fa0c03c148268a1a162793bc3197" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_57777a1586e349bd987700fcb42bc606 = echarts.init(
-            document.getElementById('57777a1586e349bd987700fcb42bc606'), 'white', {renderer: 'canvas'});
-        var option_57777a1586e349bd987700fcb42bc606 = {
+        var chart_1342fa0c03c148268a1a162793bc3197 = echarts.init(
+            document.getElementById('1342fa0c03c148268a1a162793bc3197'), 'white', {renderer: 'canvas'});
+        var option_1342fa0c03c148268a1a162793bc3197 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -175,16 +175,22 @@
             "clockwise": true,
             "data": [
                 {
-                    "name": "USA",
-                    "value": 7359
-                },
-                {
                     "name": "Canada",
-                    "value": 1717
+                    "value": [
+                        38
+                    ]
                 },
                 {
                     "name": "Mexico",
-                    "value": 1205
+                    "value": [
+                        20
+                    ]
+                },
+                {
+                    "name": "USA",
+                    "value": [
+                        165
+                    ]
                 }
             ],
             "radius": [
@@ -212,9 +218,9 @@
     "legend": [
         {
             "data": [
-                "USA",
                 "Canada",
-                "Mexico"
+                "Mexico",
+                "USA"
             ],
             "selected": {},
             "show": true,
@@ -243,25 +249,24 @@
     },
     "title": [
         {
-            "text": "\u7b2c\u4e00\u9898",
+            "text": "\u7b2c\u4e8c\u9898",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_57777a1586e349bd987700fcb42bc606.setOption(option_57777a1586e349bd987700fcb42bc606);
+        chart_1342fa0c03c148268a1a162793bc3197.setOption(option_1342fa0c03c148268a1a162793bc3197);
     </script>
         <br>
         <br>
         <br>
         <br>
         <br>
-
         <h3>视频：
             
         </h3>
             <video  autoplay="autoplay" preload="preload">
-                <source src="./1.webm" type="video/webm">
+                <source src="./2.webm" type="video/webm">
             </video>
     </div>
 </body>

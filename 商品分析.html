@@ -68,17 +68,17 @@
         </ul>
         <div id="banner_list">
             <a href="https://pics1.baidu.com/feed/d1a20cf431adcbeffa82fce9d58999d9a2cc9f52.jpeg?token=448539945194433718507b7a07cb39ff&s=C700B844CE961E59122A003E0300D05A" target="_blank">
-                <img src="./截图/1.png">
+                <img src="./截图/11.png">
             </a>
             <a href="#" target="_blank">
-                <img src="./截图/2.png">
+                <img src="./截图/22.png">
 
             </a>
             <a href="#" target="_blank">
-                <img src="./截图/3-1.png">
+                <img src="./截图/33-1.png">
             </a>
             <a href="#" target="_blank">
-                <img src="./截图/4.png">
+                <img src="./截图/44.png">
             </a>
         </div>
     </div>
@@ -87,7 +87,7 @@
             <button>作者</button>
         </a>
         <a href="./客源分析.html">
-            <button class="button_background">客源分析</button>
+            <button>客源分析</button>
         </a>
         <a href="./vip分析.html">
             <button>vip分析</button>
@@ -96,13 +96,13 @@
             <button>经营分析</button>
         </a>
         <a href="./商品分析.html">
-            <button>商品分析</button>
+            <button class="button_background">商品分析</button>
         </a>
     </div>
     <div>
 
         <h3>分析过程：
-        <p>重点在于用group by分组</p>
+            <p>重点在于用group by分组，limit限制数量，以及两个表重复的列名要有表名在前</p>
             <img src="">
         </h3>
         <br>
@@ -112,7 +112,7 @@
         <br>
 
         <h3>sql语句：
-            <img src="./截图/11.png">
+            <img src="./截图/44.png">
         </h3>
         <br>
         <br>
@@ -120,7 +120,7 @@
         <br>
         <br>
         <h3>查询结果：
-            <img src="./截图/1.png">
+            <img src="./截图/4.png">
         </h3>
         <br>
         <br>
@@ -130,11 +130,11 @@
         <h3>可视化：
             
         </h3>
-        <div id="57777a1586e349bd987700fcb42bc606" class="chart-container" style="width:900px; height:500px;"></div>
+        <div id="574ba4c7e6b9429cad0b2b14d79e3bee" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_57777a1586e349bd987700fcb42bc606 = echarts.init(
-            document.getElementById('57777a1586e349bd987700fcb42bc606'), 'white', {renderer: 'canvas'});
-        var option_57777a1586e349bd987700fcb42bc606 = {
+        var chart_574ba4c7e6b9429cad0b2b14d79e3bee = echarts.init(
+            document.getElementById('574ba4c7e6b9429cad0b2b14d79e3bee'), 'white', {renderer: 'canvas'});
+        var option_574ba4c7e6b9429cad0b2b14d79e3bee = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -171,52 +171,47 @@
     ],
     "series": [
         {
-            "type": "pie",
-            "clockwise": true,
+            "type": "bar",
+            "name": "\u51fa\u552e\u603b\u91cf",
+            "legendHoverLink": true,
             "data": [
-                {
-                    "name": "USA",
-                    "value": 7359
-                },
-                {
-                    "name": "Canada",
-                    "value": 1717
-                },
-                {
-                    "name": "Mexico",
-                    "value": 1205
-                }
+                458.0,
+                423.0,
+                423.0,
+                422.0,
+                422.0,
+                420.0,
+                419.0,
+                419.0,
+                419.0,
+                417.0
             ],
-            "radius": [
-                "0%",
-                "75%"
-            ],
-            "center": [
-                "50%",
-                "50%"
-            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8,
-                "formatter": "{b}:{c}"
-            },
-            "rippleEffect": {
-                "show": true,
-                "brushType": "stroke",
-                "scale": 2.5,
-                "period": 4
+                "margin": 8
             }
         }
     ],
     "legend": [
         {
             "data": [
-                "USA",
-                "Canada",
-                "Mexico"
+                "\u51fa\u552e\u603b\u91cf"
             ],
-            "selected": {},
+            "selected": {
+                "\u51fa\u552e\u603b\u91cf": true
+            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -241,27 +236,84 @@
         "borderWidth": 0,
         "padding": 5
     },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "Great",
+                "Nationeel",
+                "Booker",
+                "Great",
+                "Excellent",
+                "Moms",
+                "Nationeel",
+                "ADJ",
+                "Ebony",
+                "Moms"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
     "title": [
         {
-            "text": "\u7b2c\u4e00\u9898",
+            "text": "\u7b2c\u56db\u9898",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_57777a1586e349bd987700fcb42bc606.setOption(option_57777a1586e349bd987700fcb42bc606);
+        chart_574ba4c7e6b9429cad0b2b14d79e3bee.setOption(option_574ba4c7e6b9429cad0b2b14d79e3bee);
     </script>
         <br>
         <br>
         <br>
         <br>
         <br>
-
         <h3>视频：
             
         </h3>
             <video  autoplay="autoplay" preload="preload">
-                <source src="./1.webm" type="video/webm">
+                <source src="./3.webm" type="video/webm">
             </video>
     </div>
 </body>

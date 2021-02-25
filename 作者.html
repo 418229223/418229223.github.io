@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./lunboh5.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+    <script type="text/javascript">
+    var t = n = 0,
+        count;
+    $(document).ready(function() {
+            // 获取图片标签长度
+            count = $("#banner_list a").length;
+            // 不是当前显示的图片隐藏
+            $("#banner_list a:not(:first-child)").hide();
+            // 点击下面的1234按钮，切换图片
+            $("#banner li").click(function() {
+                var i = $(this).text() - 1;
+                n = i;
+                if (i >= count) return;
+                // 淡入淡出效果
+                $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+
+                // 响应点击
+                $(this).toggleClass("on");
+
+                // 切换按钮的时候让上一个按钮回归原来的样式
+                $(this).siblings().removeAttr("class");
+            });
+            t = setInterval("showAuto()", 4000);
+            $("#banner").hover(function() {
+                    clearInterval(t)
+                },
+                function() {
+                    t = setInterval("showAuto()", 4000);
+                });
+        })
+        // 自动轮播
+    function showAuto() {
+        n = n >= (count - 1) ? 0 : ++n;
+        $("#banner li").eq(n).trigger('click');
+    }
+    </script>
+</head>
+
+<body>
+    <div id="banner">
+        <div id="banner_bg">
+        </div>
+        <div id="banner_info">
+        </div>
+        <ul>
+            <li class="on">
+                1
+            </li>
+            <li>
+                2
+            </li>
+            <li>
+                3
+            </li>
+            <li>
+                4
+            </li>
+        </ul>
+        <div id="banner_list">
+            <a href="https://pics1.baidu.com/feed/d1a20cf431adcbeffa82fce9d58999d9a2cc9f52.jpeg?token=448539945194433718507b7a07cb39ff&s=C700B844CE961E59122A003E0300D05A" target="_blank">
+                <img src="./截图/11.png">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./截图/22.png">
+
+            </a>
+            <a href="#" target="_blank">
+                <img src="./截图/33-1.png">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./截图/44.png">
+            </a>
+        </div>
+    </div>
+    <div>
+        <a href="./作者.html">
+            <button class="button_background">作者</button>
+        </a>
+        <a href="./客源分析.html">
+            <button>客源分析</button>
+        </a>
+        <a href="./vip分析.html">
+            <button>vip分析</button>
+        </a>
+        <a href="./经营分析.html">
+            <button >经营分析</button>
+        </a>
+        <a href="./商品分析.html">
+            <button>商品分析</button>
+        </a>
+    </div>
+    <div>
+        <form action="/addBook/" method="post" name="addBook">
+            <p><span>学号：</span><input type="text" value="1715070209" name="name"></p>
+            <p><span>姓名：</span><input type="text" value="朱明睿" name="author"></p>
+            <p><span>班级：</span><input type="text" value="17计本2班" name="pub_house"></p>
+        </form>
+    </div>
+    
+</body>
+
+</html>
