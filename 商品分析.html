@@ -68,17 +68,17 @@
         </ul>
         <div id="banner_list">
             <a href="https://pics1.baidu.com/feed/d1a20cf431adcbeffa82fce9d58999d9a2cc9f52.jpeg?token=448539945194433718507b7a07cb39ff&s=C700B844CE961E59122A003E0300D05A" target="_blank">
-                <img src="./截图/11.png">
+                <img style="display: inline-block; width: 400%; max-width: 400%; height: 300%; max-height: 300%;"  src="./截图/1.png">
             </a>
             <a href="#" target="_blank">
-                <img src="./截图/22.png">
+                <img style="display: inline-block; width: 350%; max-width: 400%; height: 300%; max-height: 300%;"  src="./截图/2.png">
 
             </a>
             <a href="#" target="_blank">
-                <img src="./截图/33-1.png">
+                <img style="display: inline-block; width: 3500%; max-width: 400%; height: 300%; max-height: 300%;" src="./截图/3-1.png">
             </a>
             <a href="#" target="_blank">
-                <img src="./截图/44.png">
+                <img style="display: inline-block; width: 3500%; max-width: 400%; height: 300%; max-height: 300%;" src="./截图/4.png">
             </a>
         </div>
     </div>
@@ -87,23 +87,25 @@
             <button>作者</button>
         </a>
         <a href="./index.html">
-            <button>客源分析</button>
+            <button>简介</button>
         </a>
         <a href="./vip分析.html">
-            <button>vip分析</button>
+            <button>首页</button>
         </a>
         <a href="./经营分析.html">
-            <button>经营分析</button>
+            <button>我的</button>
         </a>
         <a href="./商品分析.html">
-            <button class="button_background">商品分析</button>
+            <button class="button_background">曲谱</button>
         </a>
     </div>
     <div>
 
-        <h3>分析过程：
-            <p>重点在于用group by分组，limit限制数量，以及两个表重复的列名要有表名在前</p>
-            <img src="">
+        <h3>曲谱：
+            <p>曲谱页面主要为曲谱展示，示范音乐播放，录音</p>
+            <img src="./截图/图片8.png"><br />
+            <img src="./截图/图片9.png"><br />
+            <img src="./截图/图片10.png">
         </h3>
         <br>
         <br>
@@ -111,211 +113,7 @@
         <br>
         <br>
 
-        <h3>sql语句：
-            <img src="./截图/44.png">
-        </h3>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h3>查询结果：
-            <img src="./截图/4.png">
-        </h3>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h3>可视化：
-            
-        </h3>
-        <div id="574ba4c7e6b9429cad0b2b14d79e3bee" class="chart-container" style="width:900px; height:500px;"></div>
-    <script>
-        var chart_574ba4c7e6b9429cad0b2b14d79e3bee = echarts.init(
-            document.getElementById('574ba4c7e6b9429cad0b2b14d79e3bee'), 'white', {renderer: 'canvas'});
-        var option_574ba4c7e6b9429cad0b2b14d79e3bee = {
-    "animation": true,
-    "animationThreshold": 2000,
-    "animationDuration": 1000,
-    "animationEasing": "cubicOut",
-    "animationDelay": 0,
-    "animationDurationUpdate": 300,
-    "animationEasingUpdate": "cubicOut",
-    "animationDelayUpdate": 0,
-    "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
-    ],
-    "series": [
-        {
-            "type": "bar",
-            "name": "\u51fa\u552e\u603b\u91cf",
-            "legendHoverLink": true,
-            "data": [
-                458.0,
-                423.0,
-                423.0,
-                422.0,
-                422.0,
-                420.0,
-                419.0,
-                419.0,
-                419.0,
-                417.0
-            ],
-            "showBackground": false,
-            "barMinHeight": 0,
-            "barCategoryGap": "20%",
-            "barGap": "30%",
-            "large": false,
-            "largeThreshold": 400,
-            "seriesLayoutBy": "column",
-            "datasetIndex": 0,
-            "clip": true,
-            "zlevel": 0,
-            "z": 2,
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8
-            }
-        }
-    ],
-    "legend": [
-        {
-            "data": [
-                "\u51fa\u552e\u603b\u91cf"
-            ],
-            "selected": {
-                "\u51fa\u552e\u603b\u91cf": true
-            },
-            "show": true,
-            "padding": 5,
-            "itemGap": 10,
-            "itemWidth": 25,
-            "itemHeight": 14
-        }
-    ],
-    "tooltip": {
-        "show": true,
-        "trigger": "item",
-        "triggerOn": "mousemove|click",
-        "axisPointer": {
-            "type": "line"
-        },
-        "showContent": true,
-        "alwaysShowContent": false,
-        "showDelay": 0,
-        "hideDelay": 100,
-        "textStyle": {
-            "fontSize": 14
-        },
-        "borderWidth": 0,
-        "padding": 5
-    },
-    "xAxis": [
-        {
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": false,
-                "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "data": [
-                "Great",
-                "Nationeel",
-                "Booker",
-                "Great",
-                "Excellent",
-                "Moms",
-                "Nationeel",
-                "ADJ",
-                "Ebony",
-                "Moms"
-            ]
-        }
-    ],
-    "yAxis": [
-        {
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": false,
-                "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            }
-        }
-    ],
-    "title": [
-        {
-            "text": "\u7b2c\u56db\u9898",
-            "padding": 5,
-            "itemGap": 10
-        }
-    ]
-};
-        chart_574ba4c7e6b9429cad0b2b14d79e3bee.setOption(option_574ba4c7e6b9429cad0b2b14d79e3bee);
-    </script>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h3>视频：
-            
-        </h3>
-            <video  autoplay="autoplay" preload="preload">
-                <source src="./3.webm" type="video/webm">
-            </video>
-    </div>
+       
 </body>
 
 </html>
